@@ -7,7 +7,7 @@ import sys
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Finds the best album canidates for replacing with FLAC"
+        description="Finds the best album candidates for replacing with FLAC"
     )
 
     parser.add_argument("-n", type=int, default=10, help="Number of results to show")
