@@ -54,6 +54,10 @@ def main(num_results, beets_db_path):
             f"{album}\n\tArtist: {album_artist}\n\tPath: {path}\n\tNum mp3s: {num_mp3_tracks}"
         )
 
+    # Close connections
+    c.close()
+    conn.close()
+
 
 if __name__ == "__main__":
     args = parse_args()
